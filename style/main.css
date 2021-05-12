@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+        
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row ;
+    padding: 15px 20px;
+    align-items: center;
+    font-family: 'Exo 2' , sans-serif;
+}
+header {
+    background-color: rgb(248, 248, 248);
+}
+.logo img{
+    width: 6em;
+}
+.navigation {
+    margin: 0;
+    padding: 0;
+}
+.navigation > li {
+    display: inline-block;
+    margin-right: 15px;
+    
+}
+.navigation > li:last-child {
+    margin-right: 0;
+    
+}
+header [href$=".html"] {
+    text-decoration: none;
+    color: black;
+}
+header [href$=".html"]:hover {
+    text-decoration: underline;
+}
+.nav_right > div {
+    display: inline-block;
+}
+
+.nav_right select {
+    background-color: rgb(248, 248, 248);
+    border: none;
+    width: 80px;
+    background: url('../images/circle.png') no-repeat right;
+    margin-right: 15px;
+    background-size: 19px;  
+    font-family: 'Exo 2' , sans-serif; 
+    font-size: 16px;
+}
+
+.main_section {
+    display: flex;
+    flex-direction: row;
+    color: rgb(27, 27, 78);
+    font-family: 'Russo One', sans-serif;
+    font-size: 25px;
+}
+
+.main_section div {
+    flex: 300px 1 0;
+}
+
+
+
+
+

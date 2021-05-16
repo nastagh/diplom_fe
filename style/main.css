@@ -1,15 +1,18 @@
 * {
     box-sizing: border-box;
     margin: 0;
-        
 }
+
+.font {
+    font-family: 'Exo 2' , sans-serif;
+}
+
 .container {
     display: flex;
     justify-content: space-between;
     flex-direction: row ;
     padding: 15px 0;
     align-items: center;
-    font-family: 'Exo 2' , sans-serif;
     max-width: 1300px;
     margin: auto;
 }
@@ -50,17 +53,15 @@ header [href$=".html"]:hover {
     background: url('../images/circle.png') no-repeat right;
     margin-right: 15px;
     background-size: 19px;  
-    font-family: 'Exo 2' , sans-serif; 
     font-size: 16px;
 }
 
 .main_section {
     background-color: rgb(248, 248, 248);
-    font-family: 'Exo 2' , sans-serif;
-    background-image: url('../images/wave3.png');
+    background-image: url('../images/Vector.png');
     background-repeat: no-repeat;
     background-position: bottom;
-    padding-bottom: 175px;
+    padding-bottom: 155px;
     background-size: 100% auto;
 }
 .main_section > div {
@@ -87,14 +88,19 @@ header [href$=".html"]:hover {
     max-width: 400px;
 }
 
+.main_section [href$=".html"] {
+    text-decoration: none;
+    color: rgb(15, 15, 51);
+}
 .yellow_underline {
     text-decoration: underline #ffdc38;
     text-decoration-skip-ink: none;
 }
 
-button {
+.button1 {
     color: rgb(15, 15, 51);
     font-weight: bold;
+    font-variant:  small-caps;
     border-radius: 20px;
     border: none;
     height: 35px;
@@ -102,6 +108,10 @@ button {
     background-image: linear-gradient(50deg, rgb(243, 151, 12), #ffdc38 55%);
     box-shadow: 0 10px 20px #ffdc38;
     margin-top: 25px;
+}
+
+.button1:hover {
+    background-image: linear-gradient(50deg, rgb(243, 151, 12), #ffdc38);
 }
 
 .main_section >div >div:first-child {
@@ -130,6 +140,7 @@ button {
 
 .bottle {
     text-align: center;
+    position: relative;
 }
 
 .bottle img{
@@ -137,5 +148,133 @@ button {
     max-height: 500px;
 }
 
+.card1 {
+    width: 220px;
+    height: 120px;
+    border-radius: 20px;
+    background-color: #ffdc38;
+    text-align: left;
+    padding: 10px 20px;
+    position: absolute; right: 50px; bottom: 30px;
+    background-image: url('../images/lemon.png');
+    background-size: 150px;
+    background-repeat: no-repeat;
+    background-position: 120% 10%;
+}
+
+.card1 div:first-child {
+    font-size: 20px;
+}
+
+.card1 div {
+    margin-bottom: 12px;
+}
+.button2 {
+    color: rgb(15, 15, 51);
+    font-weight: bold;
+    font-size: 12px;
+    border-radius: 20px;
+    border: solid 2px rgb(9, 80, 9);
+    height: 25px;
+    width: 80px;
+    background-color: #ffdc38;
+}
+
+.button2:hover {
+    background-color: #f0cf77;
+}
+
+.products {
+    /* display: inline-block; */
+    text-align: center;
+    width: 100%;
+}
+
+.products h2{
+    font-family: 'Russo One', sans-serif;
+    color: rgb(15, 15, 51);
+    font-family: 'Russo One', sans-serif;
+}
+
+.products p {
+    font-size: 16px;
+    margin-top: 25px;
+    font-weight: bold;
+}
+
+.main_jams {
+    display: flex;
+    max-width: 1300px;
+    margin: auto;
+    /* margin-top: 25px; */
+    
+}
+
+.jams1 {
+    transform: rotate(270deg);
+    flex: 10px 0 0;
+}
+
+.jams1::after, .jams1::before {
+    content:"\00a0\00a0\00a0\00a0\00a0";
+    text-decoration:line-through;
+}
 
 
+
+.jams {
+    flex: 100px 1 0;
+    display: flex;
+    justify-content: space-between;
+    height: 350px;
+    overflow: hidden;
+    padding-top: 25px;
+}
+
+.jams>div {
+    border-radius: 10px;
+    color: white;
+    flex-basis: 240px;
+    position: relative;
+}
+
+.jams>div:hover {
+    filter: saturate(70%) blur(1px);
+    transform: scale(1.1);
+}
+
+.jams_tittle {
+    font-size:  20px;
+    margin-bottom: 12px;
+    margin-top: 12px;
+    /* min-width: 250px; */
+}
+
+.jams img{
+    width: auto;
+    max-height: 300px;
+    margin-top: 15px;
+}
+
+.jams2 {
+    background-image: linear-gradient(0deg, #d31d2c, #f75865 55%) ;
+}
+
+.jams3 {
+    background-image: linear-gradient(0deg, #55539b, #918fd8 55%);
+}
+
+.jams4 {
+    background-image: linear-gradient(0deg, #eb6526, #ec8a63 55%);
+}
+
+.jams5 {
+    background-image: linear-gradient(0deg, #8a2b4f, #b94974 55%);
+}
+
+.button_jams {
+    border: solid 2px white;
+    border-radius: 20px;
+    height: 35px;
+    width: 200px;
+}

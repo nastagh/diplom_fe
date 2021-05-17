@@ -174,7 +174,7 @@ header [href$=".html"]:hover {
     font-weight: bold;
     font-size: 12px;
     border-radius: 20px;
-    border: solid 2px rgb(9, 80, 9);
+    border: solid 1px rgb(9, 80, 9);
     height: 25px;
     width: 80px;
     background-color: #ffdc38;
@@ -210,44 +210,40 @@ header [href$=".html"]:hover {
     
 }
 
-.jams1 {
-    transform: rotate(270deg);
-    flex: 10px 0 0;
-}
-
-.jams1::after, .jams1::before {
-    content:"\00a0\00a0\00a0\00a0\00a0";
-    text-decoration:line-through;
-}
-
-
-
 .jams {
     flex: 100px 1 0;
     display: flex;
     justify-content: space-between;
     height: 350px;
     overflow: hidden;
-    padding-top: 25px;
+    padding: 25px 10px 10px;
 }
 
 .jams>div {
     border-radius: 10px;
     color: white;
-    flex-basis: 240px;
+    flex-basis: 260px;
     position: relative;
+    overflow: hidden;
 }
 
 .jams>div:hover {
-    filter: saturate(70%) blur(1px);
-    transform: scale(1.1);
+    transform: scale(1.05);
+    transform-origin:bottom ;
+    transition-duration: 1s;
+}
+.jams>div:hover>img {
+    -webkit-mask-image: linear-gradient(to bottom, black 0%, transparent 100%);
+    mask-image: linear-gradient(to bottom, black 0%, transparent 100%);
 }
 
+.jams>div:hover>.button_jams {
+    display: block;
+}
 .jams_tittle {
     font-size:  20px;
     margin-bottom: 12px;
     margin-top: 12px;
-    /* min-width: 250px; */
 }
 
 .jams img{
@@ -273,8 +269,109 @@ header [href$=".html"]:hover {
 }
 
 .button_jams {
+    height: auto;
+    width: 100%;
+    position: absolute;
+    bottom: 25px;
+    display: none;
+}
+
+.button_jams > button {
     border: solid 2px white;
+    color: #FFF;
     border-radius: 20px;
     height: 35px;
-    width: 200px;
+    width: 150px;
+    margin: auto;
+    background-color: inherit;
+}
+
+.vertical_text_block_jams {
+    padding-top: 25px;
+    width: 50px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+}
+
+.vertical_text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #97a1aa;
+}
+
+.vertical_line {
+    border-left: 1px solid #97a1aa;
+    flex-grow: 1;
+    width: 1px;
+}
+.vertical_middle_text {
+    writing-mode: tb-rl;
+    transform: rotate(-180deg);
+}
+
+.full_width {
+    width: 100%;
+}
+
+.jams [href$=".html"] {
+    text-decoration: none;
+    color: white;
+}
+
+.jams [href$=".html"]:hover {
+    text-decoration: none;
+}
+
+.honey {
+    flex: 100px 1 0;
+    display: flex;
+    justify-content: space-between;
+    height: 230px;
+    /* padding-top: 25px; */
+    padding: 25px 10px;
+    
+}
+
+.honey>div {
+    background-color: #ffdc38;
+    border-radius: 10px;
+    flex-basis: 400px;
+    text-align: left;
+    padding-top: 10px; 
+    padding-left: 20px;
+}
+
+.vertical_text_block_honey {
+    padding-top: 25px;
+    width: 50px;
+    height: 230px;
+    display: flex;
+    justify-content: center;
+}
+
+.honey_tittle {
+    position: absolute;
+}
+
+.honey_tittle div:first-child {
+    font-size:  20px;
+    margin-bottom: 12px;
+    margin-top: 12px;
+}
+
+.honey img{
+    width: 100%;
+    max-height: 230px;
+    object-position: right -60px bottom -10px;
+}
+
+.honey >div {
+    overflow: hidden;
+}
+
+.production_information {
+   background-color: rgb(248, 248, 248);
+   display: grid;
 }

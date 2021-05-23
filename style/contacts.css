@@ -1,0 +1,71 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.font {
+    font-family: 'Exo 2' , sans-serif;
+}
+
+.side_padding {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.contacts {
+    background-color: rgb(248, 248, 248);
+    padding: 50px 20px;
+
+}
+
+.contacts>div {
+    max-width: 1300px;
+    margin: auto;
+}
+
+.contacts h2 {
+    font-family: 'Russo One', sans-serif;
+    color: rgb(15, 15, 51);
+}
+
+.teleph_email {
+    display: flex;
+}
+
+.teleph_email>div {
+    flex: 100px 0 0;
+    margin: 25px 100px 40px 0;
+    display: flex;
+}
+
+.teleph_email img {
+    width: 16px;
+    margin-right: 5px;
+}
+
+.map {
+    display: flex;
+    font-size: 12px;
+    font-weight: bold;
+    justify-content: space-between;
+}
+
+.map button {
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 15px;
+    width: 120px;
+    height: 20px;
+}
+
+.map_info {
+    border: solid 3px rgb(224, 221, 221);
+    border-radius: 5px;
+    margin: 15px auto 0 0;
+}
+
+.map>div {
+    flex: 300px 0 0;
+}

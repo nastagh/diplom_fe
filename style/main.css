@@ -376,6 +376,8 @@ header [href$=".html"]:hover, footer [href$=".html"]:hover {
     font-weight: bold;
 }
 
+
+
 .prodaction_information {
     margin-top: 30px;
     background-color: rgb(248, 248, 248);
@@ -465,177 +467,22 @@ header [href$=".html"]:hover, footer [href$=".html"]:hover {
     color: rgb(15, 15, 51);
 }
 
+.prodaction_information a {
+    text-decoration: none;
+    color: rgb(15, 15, 51);
+}
+
+.prodaction_information a:hover {
+    text-decoration: underline;
+}
+
 .imageb>button{
     position: absolute;
     left: 73px;
     bottom: 10px;
 }
 
-footer {
-    background-color: white;
-}
 
-.contacts {
-    background-color: rgb(248, 248, 248);
-    padding: 50px 20px;
 
-}
 
-.contacts>div {
-    max-width: 1300px;
-    margin: auto;
-}
 
-.contacts h2 {
-    font-family: 'Russo One', sans-serif;
-    color: rgb(15, 15, 51);
-}
-
-.teleph_email {
-    display: flex;
-}
-
-.teleph_email>div {
-    flex: 100px 0 0;
-    margin: 25px 100px 40px 0;
-    display: flex;
-}
-
-.teleph_email img {
-    width: 16px;
-    margin-right: 5px;
-}
-
-.map {
-    display: flex;
-    font-size: 12px;
-    font-weight: bold;
-    justify-content: space-between;
-}
-
-.map button {
-    color: white;
-    background-color: black;
-    border-radius: 5px;
-    border: none;
-    margin-bottom: 15px;
-    width: 120px;
-    height: 20px;
-}
-
-.map_info {
-    border: solid 3px rgb(224, 221, 221);
-    border-radius: 5px;
-    margin: 15px auto 0 0;
-}
-
-.map>div {
-    flex: 300px 0 0;
-}
-
-.delivery_payment {
-    text-align: center;
-    position: relative;
-
-}
-
-.icon {
-    width: 50px;
-    margin-bottom: 15px;
-    padding: 10px;
-    border-radius: 5px;
-    border: none;
-    background-image: linear-gradient(50deg, rgb(243, 151, 12), #ffdc38 55%);
-    box-shadow: 0 5px 5px #ffdc38;
-}
-
-.delivery_payment>div:first-child {
-    border: solid 1px red;
-    max-width: 1300px;
-    margin: auto;
-    display: grid;
-    padding: 90px 0;
-    grid-template-columns: 240px 240px 240px 10px;
-    grid-template-rows: 30px 120px 50px 80px;
-    grid-column-gap: 55px;
-    grid-row-gap: 20px;
-    grid-template-areas:
-    '.     delivery delivery delivery'
-    'order delivery delivery delivery'
-    '.     .        .        .      '
-    '.      connection number .     ' ;
-
-}
-
-.delivery_payment h4 {
-    margin-bottom: 10px;
-}
-
-.order {
-    grid-area: order;
-}
-
-.delivery {
-    grid-area: delivery;
-    text-align: left;
-    background-color: rgb(248, 248, 248);
-    padding: 40px 30px;
-    background-image: url('../images/frutcube.com.png');
-    background-repeat: no-repeat;
-    background-position: 100%;
-    background-size: 120px;
-
-}
-
-.delivery>h2 {
-    font-family: 'Russo One', sans-serif;
-    color: rgb(15, 15, 51);
-    margin-bottom: 10px;
-}
-
-.connection {
-    grid-area: connection;
-}
-
-.number {
-    grid-area: number;
-}
-
-.form {
-    width: 350px;
-    background-color: #ffdc38;
-    padding: 35px 0;
-    /* position: absolute; */
-    /* right: 10px;
-    bottom: 10px; */
-}
-
-.form p {
-    margin: 15px 0;
-}
-
-label img {
-    width: 20px;
-}
-
-.button_form {
-    color: rgb(15, 15, 51);
-    font-weight: bold;
-    font-size: 12px;
-    border-radius: 20px;
-    border: solid 1px rgb(9, 80, 9);
-    height: 45px;
-    width: 220px;
-    background-color: #ffdc38;
-    margin-top: 15px;
-}
-
-.button_form [href$=".html"] {
-    text-decoration: none;
-    color: rgb(15, 15, 51);
-}    
-
-.lower_text_form {
-    font-size: 12px;
-    color: rgb(129, 129, 126);
-}

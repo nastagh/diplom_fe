@@ -1,0 +1,55 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.font {
+    font-family: 'Exo 2' , sans-serif;
+}
+
+.side_padding {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.prodaction_info {
+    background-color: rgb(248, 248, 248);
+    text-align: center;
+    width: 100%;
+    padding: 40px 0;
+}
+
+.prodaction_info>div {
+    max-width: 1300px;
+    margin: auto;
+}
+
+.prodaction_info h2 {
+    font-family: 'Russo One', sans-serif;
+    color: rgb(15, 15, 51);
+    margin-bottom: 15px;
+}
+
+.article {
+    display: flex;
+    flex-direction: row;
+    margin-top: 100px;
+}
+
+.article_img img {
+    height: 200px;
+}
+
+.article_text {
+    flex: 500px 1 0;
+}
+
+.article_img {
+    flex: 600px 1 0;
+    text-align: center;
+}
+
+.article_text p {
+    margin-top: 25px;
+    text-align: left;
+}

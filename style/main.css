@@ -35,11 +35,11 @@ header {
     margin-right: 0;
     
 }
-header [href$=".html"] {
+header [href$=".html"], footer [href$=".html"] {
     text-decoration: none;
     color: black;
 }
-header [href$=".html"]:hover {
+header [href$=".html"]:hover, footer [href$=".html"]:hover {
     text-decoration: underline;
 }
 .nav_right > div {
@@ -70,6 +70,7 @@ header [href$=".html"]:hover {
     color: rgb(15, 15, 51);
     max-width: 1300px;
     margin: auto;
+
 }
 
 .main_section > div > div {
@@ -84,7 +85,7 @@ header [href$=".html"]:hover {
 .main_section p {
     font-size: 16px;
     margin-top: 25px;
-    font-weight: bold;
+    /* font-weight: bold; */
     max-width: 400px;
 }
 
@@ -193,13 +194,12 @@ header [href$=".html"]:hover {
 .products h2{
     font-family: 'Russo One', sans-serif;
     color: rgb(15, 15, 51);
-    font-family: 'Russo One', sans-serif;
 }
 
 .products p {
     font-size: 16px;
     margin-top: 25px;
-    font-weight: bold;
+    /* font-weight: bold; */
 }
 
 .main_jams {
@@ -207,7 +207,6 @@ header [href$=".html"]:hover {
     max-width: 1300px;
     margin: auto;
     /* margin-top: 25px; */
-    
 }
 
 .jams {
@@ -288,6 +287,7 @@ header [href$=".html"]:hover {
 
 .vertical_text_block_jams {
     padding-top: 25px;
+    padding-bottom: 10px;
     width: 50px;
     height: 350px;
     display: flex;
@@ -330,7 +330,7 @@ header [href$=".html"]:hover {
     justify-content: space-between;
     height: 230px;
     /* padding-top: 25px; */
-    padding: 25px 10px;
+    padding: 25px 10px 0 10px;
     
 }
 
@@ -371,7 +371,271 @@ header [href$=".html"]:hover {
     overflow: hidden;
 }
 
-.production_information {
-   background-color: rgb(248, 248, 248);
-   display: grid;
+.second_text {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.prodaction_information {
+    margin-top: 30px;
+    background-color: rgb(248, 248, 248);
+    text-align: center;
+    /* width: 100%; */
+}
+
+.prodaction_information>div {
+    display: grid;
+    max-width: 1300px;
+    margin: auto;
+    padding: 45px 0;
+    grid-template-columns: 1fr 300px 1fr;
+    grid-template-rows: 110px 55px 85px 85px 85px 45px;
+    grid-column-gap: 15px;
+    grid-row-gap: 25px;
+    grid-template-areas: 
+    'tittle tittle tittle'
+    '.      imageb       .'
+    'family imageb  packaging'
+    'fields imageb  quality'
+    'apiary imageb   manual'
+    '.      imageb   .     '    ;
+}
+
+.tittle {
+    grid-area: tittle;
+}
+
+.tittle>h2 {
+    font-family: 'Russo One', sans-serif;
+    color: rgb(15, 15, 51);
+}
+
+.tittle p {
+    font-size: 16px;
+    margin-top: 25px;
+    /* font-weight: bold; */
+}
+
+.prodaction_information h3 {
+    margin-bottom: 10px;
+}
+
+.imageb {
+    grid-area: imageb;
+    position: relative;
+}
+
+.imageb img {
+    width: 285px;
+    border-radius: 10px;
+}
+
+.family {
+    grid-area: family;
+    text-align: right;
+}
+
+.packaging {
+    grid-area: packaging;
+    text-align: left;
+}
+
+.fields {
+    grid-area: fields;
+    text-align: right;
+}
+
+.quality {
+    grid-area: quality;
+    text-align: left;
+}
+
+.apiary {
+    grid-area: apiary;
+    text-align: right;
+}
+
+.manual {
+    grid-area: manual;
+    text-align: left;
+}
+
+.prodaction_information [href$=".html"] {
+    text-decoration: none;
+    color: rgb(15, 15, 51);
+}
+
+.imageb>button{
+    position: absolute;
+    left: 73px;
+    bottom: 10px;
+}
+
+footer {
+    background-color: white;
+}
+
+.contacts {
+    background-color: rgb(248, 248, 248);
+    padding: 50px 20px;
+
+}
+
+.contacts>div {
+    max-width: 1300px;
+    margin: auto;
+}
+
+.contacts h2 {
+    font-family: 'Russo One', sans-serif;
+    color: rgb(15, 15, 51);
+}
+
+.teleph_email {
+    display: flex;
+}
+
+.teleph_email>div {
+    flex: 100px 0 0;
+    margin: 25px 100px 40px 0;
+    display: flex;
+}
+
+.teleph_email img {
+    width: 16px;
+    margin-right: 5px;
+}
+
+.map {
+    display: flex;
+    font-size: 12px;
+    font-weight: bold;
+    justify-content: space-between;
+}
+
+.map button {
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 15px;
+    width: 120px;
+    height: 20px;
+}
+
+.map_info {
+    border: solid 3px rgb(224, 221, 221);
+    border-radius: 5px;
+    margin: 15px auto 0 0;
+}
+
+.map>div {
+    flex: 300px 0 0;
+}
+
+.delivery_payment {
+    text-align: center;
+    position: relative;
+
+}
+
+.icon {
+    width: 50px;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-image: linear-gradient(50deg, rgb(243, 151, 12), #ffdc38 55%);
+    box-shadow: 0 5px 5px #ffdc38;
+}
+
+.delivery_payment>div:first-child {
+    border: solid 1px red;
+    max-width: 1300px;
+    margin: auto;
+    display: grid;
+    padding: 90px 0;
+    grid-template-columns: 240px 240px 240px 10px;
+    grid-template-rows: 30px 120px 50px 80px;
+    grid-column-gap: 55px;
+    grid-row-gap: 20px;
+    grid-template-areas:
+    '.     delivery delivery delivery'
+    'order delivery delivery delivery'
+    '.     .        .        .      '
+    '.      connection number .     ' ;
+
+}
+
+.delivery_payment h4 {
+    margin-bottom: 10px;
+}
+
+.order {
+    grid-area: order;
+}
+
+.delivery {
+    grid-area: delivery;
+    text-align: left;
+    background-color: rgb(248, 248, 248);
+    padding: 40px 30px;
+    background-image: url('../images/frutcube.com.png');
+    background-repeat: no-repeat;
+    background-position: 100%;
+    background-size: 120px;
+
+}
+
+.delivery>h2 {
+    font-family: 'Russo One', sans-serif;
+    color: rgb(15, 15, 51);
+    margin-bottom: 10px;
+}
+
+.connection {
+    grid-area: connection;
+}
+
+.number {
+    grid-area: number;
+}
+
+.form {
+    width: 350px;
+    background-color: #ffdc38;
+    padding: 35px 0;
+    /* position: absolute; */
+    /* right: 10px;
+    bottom: 10px; */
+}
+
+.form p {
+    margin: 15px 0;
+}
+
+label img {
+    width: 20px;
+}
+
+.button_form {
+    color: rgb(15, 15, 51);
+    font-weight: bold;
+    font-size: 12px;
+    border-radius: 20px;
+    border: solid 1px rgb(9, 80, 9);
+    height: 45px;
+    width: 220px;
+    background-color: #ffdc38;
+    margin-top: 15px;
+}
+
+.button_form [href$=".html"] {
+    text-decoration: none;
+    color: rgb(15, 15, 51);
+}    
+
+.lower_text_form {
+    font-size: 12px;
+    color: rgb(129, 129, 126);
 }

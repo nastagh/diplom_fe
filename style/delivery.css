@@ -27,20 +27,19 @@
 }
 
 .delivery_payment>div:first-child {
-    border: solid 1px red;
     max-width: 1300px;
     margin: auto;
     display: grid;
     padding: 90px 0;
-    grid-template-columns: 240px 240px 240px 10px;
-    grid-template-rows: 30px 120px 50px 80px;
-    grid-column-gap: 55px;
+    grid-template-columns: 240px 240px 240px 10px 350px;
+    grid-template-rows: 30px 120px 50px 110px;
+    grid-column-gap: 45px;
     grid-row-gap: 20px;
     grid-template-areas:
-    '.     delivery delivery delivery'
-    'order delivery delivery delivery'
-    '.     .        .        .      '
-    '.      connection number .     ' ;
+    '.     delivery delivery delivery form'
+    'order delivery delivery delivery form'
+    '.     .        .        .        form'
+    '.      connection number .       form' ;
     position: relative;
 
 }
@@ -80,13 +79,14 @@
 }
 
 .form {
+    grid-area: form;
     width: 350px;
     background-image: linear-gradient(0deg, rgb(243, 151, 12), #ffdc38 75%);
     padding: 35px 0;
     border-radius: 15px;
-    position: absolute;
+    /* position: absolute;
     bottom: 500px;
-    right: 80px;
+    right: 80px; */
 }
 
 .form p {

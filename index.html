@@ -18,6 +18,7 @@
     $("#footer").load("footer.html"); 
     });
     </script>
+    
 </head>
 <body>
     <div id="header">
@@ -32,7 +33,7 @@
                     Идеальные продукты для правильного питания, натуральный джем и мёд прямо с пасеки сделают ваш завтрак необыкновенно полезным
                 </p>
                 <button class="button1">
-                <a href="index.html">смотреть продукты</a>
+                <a href="production.html">смотреть продукты</a>
                 </button>
                 <div class="advantages"> 
                     <div>
@@ -56,7 +57,7 @@
                 </div>
             </div>
             <div class="bottle">
-                <img src="./images/bottle.png">
+                <img src="./images/bottle.png" alt="Джем лимонный" title="Джем лимонный">
                 <div class="card1">  
                     <div>Джем лимонный</div>
                     <div>25 руб</div>
@@ -67,7 +68,7 @@
     </section>
     <section class="products side_padding font">
         <h2>
-            Продукция с нашей фермы
+            <a href="production.html" title="Наша продукция">Продукция с нашей фермы</a>
         </h2>
         <p>
             Употребляйте мёд и джем ежедневно, получайте оздовление <br> организма, бодрость и хорошее настроение
@@ -80,48 +81,78 @@
                     <div class="vertical_line"></div>
                 </div>
             </div>
+            <div class="arrow" id="left_arrow">
+                <span>
+                    &lsaquo;
+                </span>
+            </div>
             <div class="jams">
-                <div class="jams2">
+                <div class="jams2  jam_element">
                     <div class="jams_tittle">Джем Клубничный</div>
                     <div class="second_text">25 руб</div>
-                    <img src="./images/strawberry.png">
+                    <img src="./images/strawberry.png" alt="Джем Клубничный" title="Джем Клубничный">
                     <div class="button_jams">
                         <button>
                             <a href="index.html">ДОБАВИТЬ В КОРЗИНУ</a>
                         </button>
                     </div>
                 </div>
-                <div class="jams3">
+                <div class="jams3  jam_element">
                     <div class="jams_tittle">Джем Лесные ягоды</div>
                     <div class="second_text">25 руб</div>
-                    <img src="./images/berry.png">  
+                    <img src="./images/berry.png" alt="Джем Лесные ягоды" title="Джем Лесные ягоды">  
                     <div class="button_jams">
                         <button>
                             <a href="index.html">ДОБАВИТЬ В КОРЗИНУ</a>
                         </button>
                     </div>
                 </div>
-                <div class="jams4">
+                <div class="jams4  jam_element">
                     <div class="jams_tittle">Джем Персиковый</div>
                     <div class="second_text">25 руб</div>
-                    <img src="./images/peach.png">
+                    <img src="./images/peach.png" alt="Джем Персиковый" title="Джем Персиковый">
                     <div class="button_jams">
                         <button>
                             <a href="index.html">ДОБАВИТЬ В КОРЗИНУ</a>
                         </button>
                     </div>
                 </div>
-                <div class="jams5">
+                <div class="jams5  jam_element">
                     <div class="jams_tittle">Джем Абрикосовый</div>
                     <div class="second_text">25 руб</div>
-                    <img src="./images/apricot.png">
+                    <img src="./images/apricot.png" alt="Джем Абрикосовый" title="Джем Абрикосовый">
                     <div class="button_jams">
                         <button>
                             <a href="index.html">ДОБАВИТЬ В КОРЗИНУ</a>
                         </button>
                     </div>
                 </div>
-            </div>    
+                <div class="jams2  jam_element">
+                    <div class="jams_tittle">Джем Клубничный</div>
+                    <div class="second_text">25 руб</div>
+                    <img src="./images/strawberry.png" alt="Джем Клубничный" title="Джем Клубничный">
+                    <div class="button_jams">
+                        <button>
+                            <a href="index.html">ДОБАВИТЬ В КОРЗИНУ</a>
+                        </button>
+                    </div>
+                </div>
+                <div class="jams5  jam_element">
+                    <div class="jams_tittle">Джем Абрикосовый</div>
+                    <div class="second_text">25 руб</div>
+                    <img src="./images/apricot.png" alt="Джем Абрикосовый" title="Джем Абрикосовый">
+                    <div class="button_jams">
+                        <button>
+                            <a href="index.html">ДОБАВИТЬ В КОРЗИНУ</a>
+                        </button>
+                    </div>
+                </div>
+            </div> 
+            <div class="arrow" id='right_arrow'>
+                <span>
+                    &rsaquo;
+                </span>
+            </div>   
         </div>
         <div class="main_jams">
             <div class="vertical_text_block_honey">
@@ -163,9 +194,10 @@
                     <img src="./images/two_honey_jars.png">
                 </div>
             </div>
-        </div>        
+        </div> 
+               
     </section>
-    <section class="prodaction_information side_padding font">
+    <section class="production_information side_padding font">
         <div>
             <div class="tittle">
                 <h2>
@@ -176,7 +208,7 @@
                 </p>
             </div>
             <div class="imageb">
-                <img src="./images/raspberriesr.png">
+                <img src="./images/raspberriesr.png" title="О производстве">
                 <button class="button1">
                     <a href="delivery.html">заказать доставку</a>
                 </button>
@@ -229,10 +261,15 @@
                     Джем и мёд компании &mdash; это уникальный природный<br>источик витаминов и микроэлементов. Продукця не<br> содержит ГМО и усилителей вкуса.
                 </p>                
             </div>
-        </div>
+        <!-- </div> -->
     </section>
+    
     <div id="footer">
     </div>
+    <script src="main.js">
+
+    </script>
+    
 </body>
 </html>
 

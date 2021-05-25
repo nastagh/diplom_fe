@@ -42,21 +42,116 @@ header [href$=".html"] {
 header [href$=".html"]:hover {
     text-decoration: underline;
 }
-.nav_right > div {
+.nav_right_header > div {
     display: inline-block;
 }
 
-.nav_right select {
+.nav_right_header select {
     background-color: rgb(248, 248, 248);
     border: none;
-    width: 80px;
+    width: 90px;
     background: url('../images/circle.png') no-repeat right;
     margin-right: 15px;
     background-size: 19px;  
     font-size: 16px;
+    -moz-appearance: none;
+    
 }
 
 .side_padding {
     padding-left: 20px;
     padding-right: 20px;
 }
+
+.icon_menu {
+    display: none;
+}
+
+.icon_menu img {
+    width: 25px;
+    height: 25px;
+}
+
+
+#left_menu_checkbox {
+    display: none;
+}
+
+#right_menu_checkbox {
+    display: none;
+}
+
+@media only all and (max-width:880px) {
+    .nav_right_header {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        right: -50px;
+        top: 50px;
+        padding: 20px;
+        background-color: rgb(248, 248, 248);
+        width: 190px;
+        height: auto;
+    }
+
+    .nav_right_header>div {
+        margin-bottom: 15px;
+    }
+
+    #right_menu_checkbox {
+        display: block;
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        right: 20px;
+        opacity: 0;
+        z-index: 2;
+        cursor: pointer;
+    }
+
+    .icon_menu {
+        display: block;
+        transition-duration: 1s;
+    }
+
+    .navigation {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        width: 190px;
+        height: auto;
+        padding-top: 50px;
+        background-color: rgb(248, 248, 248);
+        top: 60px;
+        left: 23;
+        padding-left: 20px;
+    }
+
+    .navigation>li {
+        margin-bottom: 15px;
+    }
+
+    #left_menu_checkbox {
+        display: block;
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        left: 18px;
+        opacity: 0;
+        z-index: 2;
+        cursor: pointer;
+    }
+    #left_menu_checkbox:checked ~ .navigation {
+        display: flex;
+    }
+
+    #right_menu_checkbox:checked~.nav_right_header {
+        display: flex;
+    }
+
+    #left_menu_checkbox:checked~.left_icon{
+        transform: rotate(90deg);
+        transition-duration: 1s;
+    }
+}
+

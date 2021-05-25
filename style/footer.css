@@ -54,3 +54,11 @@ footer [href$=".html"]:hover {
 footer {
     background-color: white;
 }
+
+
+
+@media only all and (max-width:880px) {
+    .navigation {
+        display: none;
+    }
+}

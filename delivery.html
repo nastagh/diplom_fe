@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="style/delivery.css">
     <link href="https://fonts.googleapis.com/css2?family=Exo+2&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
-    <title>JAM&ampHONEY</title>
+    <title>Доставка и оплата</title>
     <script
     src="https://code.jquery.com/jquery-3.3.1.js"
     integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
@@ -20,7 +20,7 @@
     </script>
 </head>
 <body>
-    <div id="header">
+    <div id="header" class="header">
     </div>
     <section class="delivery_payment side_padding font">
         <div>
@@ -109,51 +109,8 @@
                 </p>
             </form>
         </div>
-        <!-- <form class="form" method="POST" name="INFO" action="http://fe.it-academy.by/TestForm.php">
-            <h3>
-                Форма для заказа звонка
-            </h3>
-            <p>
-                После отправки формы данных<br>мы позвоним через 15 минут.<br>Работаем с 9:00 до 18:00
-            </p>
-            <label>
-                <img src="./images/woman.svg">
-                <input type="text" name="name">
-            </label> 
-            <label>
-                <img src="./images/phone-call.svg">
-                <input type="text" name="telephone">
-            </label>
-            <div>
-                <button type="submit" class="button_form">ЗАКАЗАТЬ ЗВОНОК ОПЕРАТОРА</button>
-            </div>
-            <script>
-                var formElement=document.forms.INFO;
-                formElement.onsubmit=validateInfoForm;
-                function validateInfoForm() {
-                    var nameElement=formElement.elements.name;
-                    var telephoneElement=formElement.elements.telephone;
-                    var nameValue=nameElement.value;
-                    var telephoneValue=parseInt(telephoneElement.value.trim());
-                    if (nameValue.length>10) {
-                        alert ('Введите пожалуйста имя не длиннее 10 символов');
-                        nameElement.focus ();
-                        return false;
-                    }
-                    if (isNaN (telephoneValue)) {
-                        alert ('Введите корректный номер телефона!');
-                        telephoneElement.focus ();
-                        return false;
-                    }
-                    return true;
-                }
-            </script>
-            <p class="lower_text_form">
-                При нажатии на кнопку Вы соглащаетесь<br>на обработку персональных данных
-            </p>
-        </form> -->
     </section>
-    <div id="footer">
+    <div id="footer" class="footer">
     </div>
 </body>
 </html>

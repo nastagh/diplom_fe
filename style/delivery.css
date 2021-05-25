@@ -14,6 +14,7 @@
 
 .delivery_payment {
     text-align: center;
+    flex: 1 0 auto;
 }
 
 .icon {
@@ -31,7 +32,7 @@
     margin: auto;
     display: grid;
     padding: 90px 0;
-    grid-template-columns: 240px 240px 240px 10px 350px;
+    /* grid-template-columns: 240px 240px 240px 10px 350px; */
     grid-template-rows: 30px 120px 50px 110px;
     grid-column-gap: 45px;
     grid-row-gap: 20px;
@@ -40,8 +41,7 @@
     'order delivery delivery delivery form'
     '.     .        .        .        form'
     '.      connection number .       form' ;
-    position: relative;
-
+    /* position: relative; */
 }
 
 .delivery_payment h4 {
@@ -80,13 +80,10 @@
 
 .form {
     grid-area: form;
-    width: 350px;
+    width: 310px;
     background-image: linear-gradient(0deg, rgb(243, 151, 12), #ffdc38 75%);
     padding: 35px 0;
     border-radius: 15px;
-    /* position: absolute;
-    bottom: 500px;
-    right: 80px; */
 }
 
 .form p {
@@ -98,7 +95,6 @@
     justify-content: center;
     margin-bottom: 20px;
     height: 35px;
-    
 }
 
 label img {
@@ -131,4 +127,56 @@ label img {
 .lower_text_form {
     font-size: 12px;
     color: rgb(129, 129, 126);
+}
+
+.footer {
+    flex: 0 0 auto;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    flex: 0 0 auto;
+}
+
+
+@media only all and (min-width: 690px) and (max-width:930px) {
+    .delivery_payment>div:first-child {
+        grid-template-rows: 160px 200px 380px;
+        grid-template-areas:
+        'delivery delivery delivery '
+        'order    connection number '
+        '.        form         .    ';
+    }
+}
+
+@media only all and (max-width: 690px) {
+    .delivery_payment>div:first-child {
+        padding: 0;
+        grid-template-rows:160px 160px 160px 160px 380px;
+        grid-column-gap: 45px;
+        grid-row-gap: 20px;
+        grid-template-areas:
+        'delivery'
+        'order'
+        'connection'
+        'number'
+        'form';
+    }
+
+    .delivery {
+        background-image: none;
+    }
+
+    .form {
+        margin: auto;
+    }
 }
